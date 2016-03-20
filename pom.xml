@@ -19,7 +19,23 @@
         <artifactId>snakeyaml</artifactId>
         <version>1.17</version>
     </dependency>
+    <dependency>
+      <groupId>com.sleepycat</groupId>
+      <artifactId>je</artifactId>
+      <version>3.3.75</version>
+    </dependency>
   </dependencies>
+
+  <repositories>
+    <!-- for Berkley DB  -->
+    <repository>
+      <id>oracleReleases</id>
+      <name>Oracle Released Java Packages</name>
+      <url>http://download.oracle.com/maven</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
   <build>
     <plugins>
         <plugin>
